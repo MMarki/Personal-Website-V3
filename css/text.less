@@ -1,0 +1,207 @@
+/*Text*/
+@text-color: #231e1e;
+
+body {
+    font: 20px/1.6 'Montserrat', Helvetica, Arial, sans-serif;
+    color: @text-color; 
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* About Me Page */
+
+.headline{
+    font-size: 45px;
+    line-height: 1.3;
+    padding-bottom: 10px;
+    min-height: 190px;
+    max-width: 60em;
+    text-align:left;
+    padding-top:50px;
+
+    @media (max-width: 780px){
+        min-height: 250px;
+    }
+
+    @media (max-width: 565px){
+        min-height: 310px;
+    }
+
+    @media (max-width: 440px){
+        min-height: 370px;
+    }
+
+    @media (max-width: 400px){
+        font-size: 38px;
+        min-height: 270px;
+        padding-top: 0px;
+    }
+}
+
+
+.headline-short{
+    padding-top:0px;
+    margin-top:10px;
+}
+
+#switch {
+    border-bottom-style: solid;
+    border-bottom-color: @text-color;
+    border-bottom-width: 5px;
+}
+
+.col-md-12 .unjustified{
+  text-align: left;
+}
+/* End */
+
+
+/* Portfolio Page, shouldn't be in text.less*/
+.small-content {
+    display: none;
+    margin-top: 30px;
+    @media (max-width : 768px){
+        display: block;
+    }
+    
+    a{
+        font-size: 32px;
+    }
+}
+
+.large-content{
+    display: none;
+    @media (min-width : 768px){
+        display: block;
+    }
+}
+
+/* End*/
+
+/* Main */
+section.text-section, section.text-section-thin {
+    font-size: 20px;
+}
+
+section.text-section{
+    max-width: 48em;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 600px) {
+  section.text-section {
+    font-size: 16px;
+  }
+}
+
+section.text-section-thin{
+    max-width: 38em;
+    margin: 0 auto;
+    text-align: left;
+}
+
+section.text-section p, section.text-section ul{
+    max-width: 38em;
+    margin-bottom: 1.2em;
+}
+
+section.text-section h2, section.text-section h3 {
+	max-width: 29em;
+	margin-bottom: 0.6em;
+}
+
+section.text-section li{
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+
+/* TO DO: what is this one?*/
+.responsive-text{
+    @media (min-width: 900px){
+        max-width: 48em;
+        font-size: 22px;
+    }
+}
+
+h1, h2, h3 {
+	font-weight: 600;
+}
+
+h4{
+    font-size: 21px;
+    line-height: 1.7;
+    color: lighten(@text-color, 10%);
+    max-width: 30em;
+    text-justify:inter-word;
+    font-style: italic;
+
+}
+
+h1{
+    line-height: 1.2;
+}
+
+h2{
+    text-align: left;
+    margin-top: 52px;
+}
+
+h3{
+    font-size:24px;
+}
+
+h2{
+    font-size:32px;
+}
+
+ol{
+	list-style-type: decimal;
+}
+
+ul.bulletless{
+    list-style: none;
+}
+
+/*Top of page*/
+
+h1.work-header {
+    text-align: left;
+    font-size: 2.2em;
+}
+
+section.text-section .work-tasks{
+    max-width: 44em;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+blockquote {
+    border-left: 5px solid #bbb;
+}
+
+.redacted{
+    background-color: #000;
+    color: #FFF;
+    text-transform: uppercase;
+
+}
+
+/* END T.O.P. */
+
+/* Figure */
+
+figcaption{
+    text-align: left;
+    font: 16px/1.0 'Montserrat', Helvetica, Arial,sans-serif;
+    color: lighten(@text-color, 15%);
+    margin-bottom: 20px;
+    letter-spacing: .3px;
+}
+
+figure{
+    margin-bottom: 36px;
+}
+/* End Main*/

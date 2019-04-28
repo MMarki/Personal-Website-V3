@@ -1,0 +1,49 @@
+/*Text*/
+section.text-section {
+  max-width: 42em;
+  margin: 0 auto;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 900px) {
+  .responsive-text {
+    max-width: 48em;
+    font-size: 22px;
+  }
+}
+section.text-section-thin {
+  max-width: 40em;
+  margin: 0 auto;
+  text-align: justify;
+}
+h2 {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+  margin-top: 35px;
+}
+ol {
+  list-style-type: upper-roman;
+  margin: 1em;
+}
+ul.bulletless {
+  list-style: none;
+}
+h1.work-header {
+  text-align: left;
+  font-size: 2.2em;
+  margin-bottom: 4px;
+}
+p.work-tasks {
+  text-align: left;
+}
+figcaption {
+  text-align: center;
+  font: 16px/1 'Montserrat', Helvetica, Arial, sans-serif;
+  color: rgba(75, 60, 60, 0.9);
+}
+figure {
+  margin-bottom: 26px;
+}
