@@ -5,8 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Anti-Phone-Addiction App</title>
-        <link rel="stylesheet" type="text/css" href=".\css\bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href=".\css\bootstrap-responsive.css"/>
+        <link rel="stylesheet" type="text/css" href=".\css\bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href=".\css\style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
@@ -21,7 +20,6 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="work.html"><span>Work</span></a></li>
                   <li><a href="about-me.html">About Me</a></li>
-                  <!--li><a href="fun.html">Fun</a></li-->
                   <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
                 </ul>
             </nav>
@@ -40,21 +38,35 @@
                     </p>
                     <img class="img-work-page img-responsive img-header" src="./img/Phree/Cover%20image.png" alt="Cover"> 
                     <h2>The Problem:</h2>
-                    <p>Everyone I know spends more time on their phone than they would like to. They find their phones addictive but ultimately unfulfilling. So, why do they keep using them so much? It turns out that software companies spend a lot of time and money making sure that their applications are not just compelling and exciting, but <a href="https://www.theatlantic.com/magazine/archive/2016/11/the-binge-breaker/501122/">addictive and manipulative</a>. It makes sense that we can combat software that invades our free time and encourages bad habits with software that respects our free time and encourages good habits. With this idea in mind, I began experimenting on Phree, an anti-phone-addiction app.
+                    <p>Everyone I know spends more time on their phone than they would like to. They find their phones incredibly compelling in the moment but ultimately unfulfilling. So, why do they keep using them so much? It's not a personal failing &mdash; a few software companies are spending  a lot of time and money to make their products as <a href="https://medium.com/thrive-global/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3">addictive and manipulative</a> as possible. A couple years ago, I started thinking about whether we can combat software that invades our free time and encourages bad habits with software that respects our free time and encourages good habits. With this idea in mind, I began experimenting on Phree, an anti-phone-addiction app. As I continued iterating on the project, I found a bunch of ways to fail at fixing phone addiction, and one way that might actually work.
                     </p>
                     <h2><a id="research"></a>Research &amp; Personas:</h2>
                     <p> I started by interviewing my peers to better understand their experiences with their phones. I combined and simplified their experiences into three personas, which you can see below.
                     </p>
                     <figure>
-                        <img class="img-work-page img-responsive" src="./img/Phree/Phree%20Personas.png" alt="Personas">
+                        <img class="img-work-page img-responsive" src="./img/Phree/Phree%20Personas.jpg" alt="Personas">
                         <figcaption>Personas</figcaption>
                     </figure>
-                    <p> Each persona struggles with a different aspect of phone addiction. Annie wants to surf the web at certain times a day, James wants to free himself from the malicious investment mechanics of mobile games, and Charlotte wants to ignore the constant barrage of colorful notifications. Our phones are loaded with apps that are specifically designed to use color, notifications, and reward schedules to keep us coming back. Our phones are portals to the entire internet and we have them in our pockets all day long. I tried to reflect these concerns in the personas, and my solutions reflect the needs of the personas in turn.</p>
+                    <p> Each persona has a good reason to use their phone, but struggles to regulate their usage. Annie wants to surf the web at certain times a day but not others. James wants to free himself from the malicious investment mechanics of mobile games but still have something fun to do when he's bored. Charlotte wants to be less stressed out by distractions without losing her edge in the workplace. These personas have complicated and realistic needs. You probably feel similar to at least one of them, because our phones are loaded with apps that are specifically designed to use color, notifications, and reward schedules to keep us coming back. I tried to take these all-too-common worries and break down the root causes of phone addiction.</p>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-6"><b>Gamification</b> &mdash; It's easy to get drawn back into an experience when you have incomplete tasks. That's why careful gamification will doll out progression along multiple streams and always leave something for you to do next time you start the app. This is called the Zeigarnik effect</div>
+                        <div class="col-xs-12 col-lg-6"><b>"I didn't know it was junk food!"</b> &mdash; I see a lot of people playing Candy Crush on the subway. I wonder if these people know how rigged this kind of game is, how it gets you invested with its bright colors and multiple streams of achievement and then ratchets up the difficulty to encourage you to buy microtransactions. I think that most of them don't know that it's unhealthy for them. How would they? It's not like junk food, where you can read on the box exactly how big a serving is and how much sugar and trans fats are in one. (need a LEEDs style solution.</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-6"><b>No record-keeping</b> &mdash; Time on your phone adds up in tiny increments over the course of the day. But you don't notice unless all the infremental time is recorded and categorized into useful, easy-to-access data.</div>
+                        <div class="col-xs-12 col-lg-6"><b>Color</b> &mdash; All bright colors are mesmerizing, but we have a strongest instinctual response to the color red. Red triggers fight-or-flight insinct. That's why it's used as a notification color.</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-6"><b>Contextual usefulness</b> &mdash; Some tools are only useful at certain times of the day, but you have access to them all day long. For example, your work email is useful at 2PM, but is insomnia-inducing at 2AM.</div>
+                        <div class="col-xs-12 col-lg-6"> </div>
+                    </div>
+
                     <p> Ultimately, I settled on the following features:</p>
                     <ul>
-                        <li>A graph for tracking how much time you spend on your phone each day.</li>
-                        <li>A siteblocker to help users regain control over when they use the browser on their phone.</li>
-                        <li>An awards page to reclaim the reward circuitry that has been highjacked by mobile games and snapstreaks.</li>
+                        <li>Metrics that track how much time you spend on your phone each day.</li>
+                        <li>A siteblocker to help users regain control over when they use the browser (and individual apps) on their phone.</li>
+                        <li>An awards page to reclaim the reward circuitry that has been highjacked by mobile games, snapstreaks, and reactions by giving you awards tied directly to the goals that matter to you.</li>
                         <li>The ability to switch off the color on your phone to make it less enticing and make notifications feel less urgent.</li>
                     </ul>
                     
@@ -79,15 +91,29 @@
                         <figcaption>Siteblocker, Siteblocker Details</figcaption>
                     </figure>
                     <figure>
-                        <img class="img-work-page img-responsive" src="./img/Phree/Black%20and%20White%20Front.png" alt="UnEven Logo">
-                        <figcaption>Loading Screens (Black and White)</figcaption>
-                    </figure>
-                    <figure>
                         <img class="img-work-page img-responsive" src="./img/Phree/Black%20and%20White%20Settings%20and%20Siteblocker.png" alt="UnEven Logo">
                         <figcaption>Siteblocker (Black and White) &amp; Settings (Black and White)</figcaption>
                     </figure>
+                    <h2><a id="revisiting"></a>Revisiting:</h2>
+                    <p>It looked rather pretty. But something was wrong. I didn't think it was going to help much. My initial approach addressed some of the issues, but fell short on others. The app encouraged you to spend less time on your phone, but didn't distinguish time spent well. I tried to combat colorful notifications, but I couldn't figure out how to fix the secret junk food problem with a single app. Would this app, if built, give a user the granularity of permissions over existing apps that would be necessary to build a notification and access schedule that fit their life? Did anyone even want just another app on their phone?</p>
+                    <p>Ultimately the most robust solution to this problem comes not from a single app with a suite of tools, but from many optional tools and settings supported at the OS level.</p>
+                    <p>There are individual apps that are doing interesting work in this space, such as <a href="https://inthemoment.io/blog">Moment</a> and <a href="https://www.unglue.com/">unGlue</a>, and that's a solid route to go if you don't work for Apple or Google. Since this was all exploratory anyway, I wanted to discover what the most high-impact solution would look like.</p>
+                    <p>I doubt that Apple and Google's designers intended phones to be this disruptive, this manipulative. It probably emerged by accident, but that doesn't remove the moral imperative to dial back the addictive properties. You can see some anti-phone-addiction approaches start to emerge as Digital Wellbeing at Google and Screen Time at Apple.</p>
+                    <p>I have an Android phone, and use a couple of the Digital Wellbeing tools available. But, their offerings were lackluster (how?). So, I decided to tackle phone addiction at the OS level by building on the Andoid ecosystem's existing Digital Wellbeing tools.</p>
+                    <h2><a id="reviewing"></a>Android's Digital Wellness Offerings:</h2>
+                    <p>What is the state of the art for these tools?</p>
+                    <p>Why is the digital wellness app turned off by default and I had to google to figure out that it was in Settings, and there's a toggle on the bottom of the page to turn it back on? Finding this thing is hard? Are they ashamed of it? Do they not thin phone addiction is a big deal? Weird.</p>
+                    <p>Healthy phone use should not be opt-in!</p>
+                    <p>Google can run you through a survey and recommend tips for you. You can then click on these tips, and they take you to a set of instructions, then you go into the settings menu, then depending on what offering it is, you go to a different sub-menu, then you finally get access to this one feature. Does it have to be this distributed? Why is this exclusively a website? Why is this not the onboarding to the digital wellness app?</p>
+                    <p></p>
                 </section>
             </div>
+        </div>
+
+        <div class="container-fluid">
+            <section class="footer-nav">
+                <a class="display-link" href="about-me.html"><p>About Me</p></a>
+            </section>
         </div>
 	</body>
 </html>

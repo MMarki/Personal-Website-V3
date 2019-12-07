@@ -18,7 +18,7 @@
         transform: skewX(-10deg);
 
         &> a{
-            background-color: #6699ff !important;
+            background-color: @my-blue !important;
 
             //reverse skew text
             &> span{
@@ -68,12 +68,18 @@
     }
 }
 
+@media (max-width: 480px) {
+    .navbar{
+        margin-bottom: 0px;
+    }
+}
+
 .navbar-nav > li.active-about > a{
-    background-color: #E64626 !important;
+    background-color: @my-red !important;
 }
 
 .navbar-nav > li.active-res > a{
-    background-color: #f9c80e !important;
+    background-color: @my-yellow !important;
 }
 
 .navbar-img {
