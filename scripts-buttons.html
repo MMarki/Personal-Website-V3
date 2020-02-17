@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Buttons and Scripts</title>
+		<title>Internal Tools</title>
         <link rel="stylesheet" type="text/css" href=".\css\bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href=".\css\style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
@@ -39,8 +39,12 @@
                         |
                         <a href="#results">Results</a>
                     </p>
-                    <img class="img-work-page img-responsive img-header" src="./img/tools/button-cover.png" alt="Cover">
-                
+                    <img class="img-work-page img-responsive img-header" src="./img/tools/button-cover-new.png" alt="Cover">
+                    <div class="row summary">
+                        <div class="col-xs-12 col-lg-6"><h3>SUMMARY</h3><p>I identified an area of improvement and build internal tools using JavaScript, CSS, and the Photoshop API to steamine design handoff. I saved <b>1 month of designer-time yearly.</b>
+                        </p></div>
+                        <div class="col-xs-12 col-lg-6"><h3>ROLE</h3>I was the the sole person working on this project. It was done in downtime between more time-sensitive projects on my own initiative. I regularly consulted with the rest of the design team to build a solution that worked for all of us.</div>
+                    </div>
                     <h2><a id="intro"></a>Intro</h2>
                     <h3>What is TrueChoice?</h3>
                     <p>TrueChoice is an analytics company that builds web apps and provides data-based consulting for big companies. Our survey apps match — or feel like a natural extension of — our clients' brands. Here’s the simplified progression of a client project at TrueChoice:</p>
@@ -55,26 +59,26 @@
                         <figcaption>Apps are built on top of the Platform</figcaption>
                     </figure>
 
-                    <h3>The Problem:</h2>
-                    <p>So, we're building apps on incredibly tight deadlines, usually working on multiple projects at once. To meet these deadlines, a full half of our design team is dedicated solely to building client apps. And the process they had to go through to deliver these apps had inefficiencies that made it tough for them to deliver apps on time without working overtime.</p>
+                    <h3>The Problem</h2>
+                    <p>So, we're building apps on incredibly tight deadlines, usually working on multiple projects at once. To meet these deadlines, a full half of our design team is dedicated solely to building client apps. And the process they went through to deliver these apps had inefficiencies that made it tough for them to deliver apps on time without working overtime.</p>
 
                     <figure>
-                        <img class="img-work-page img-responsive" src="./img/tools/design.JPG" alt="Design Resource Allocation">
-                        <figcaption>Design Diagram</figcaption>
+                        <img class="img-work-page-fit img-responsive" src="./img/tools/design.JPG" alt="Design Resource Allocation">
+                        <figcaption>Design Team Diagram</figcaption>
                     </figure>
 
                     <p>I made it my mission to identify and fix some of these inefficiencies to free up time and energy for our App Dev team.</p>
 
-                    <h3>My Role:</h2>
+                    <h3>My Role</h2>
                     <ul>
                         <li>I was the the sole person working on this project. Done in downtime between more time-sensitive projects.</li>
                         <li>The project was my own initiative.</li>
                         <li>I wrote all the code for the project, but my more important contribution was identifying an area of weakness and working with the rest of the design team to build a solution that worked for them.</li>
                     </ul>
                     
-                    <h2><a id="script"></a>The Photoshop &#x27F6; LESS Script:</h2>
+                    <h2><a id="script"></a>The Photoshop &#x27F6; LESS Script</h2>
                     <p>Let's take a look at the first inefficiency I tackled — the old process of writing LESS for a new application. Here's how the process was done before I developed a tool to help out.</p>
-                    <p>A designer must enter the values for a large number of LESS variables into an Excel spreadsheet, which then gets imported and turned into real LESS variable declarations during the build process. The values in the LESS variables propagate to the various elements of the application. Originally, this was meant to be an easy interface for designers without coding experience to customize our apps. However, the the number of LESS variables has grown over the years to match the growing customizability of the Platform. There are now hundreds of LESS variables. This allows for a wide degree of customization, but requires a lot of time from the designer to fill out. Perhaps a couple hours of grabbing values with a color picker, typing in values, forgetting what a certain div is called, building, checking the build, messing up, going back, forgetting which variable corresponds to which element of the template, slamming your fist through your computer monitor, etc.</p>
+                    <p>A designer must enter the values for a large number of LESS variables into an Excel spreadsheet, which then gets imported and turned into real LESS variable declarations during the build process. The values in the LESS variables propagate to the various components in the application. Originally, this was meant to be an easy interface for designers without coding experience to customize our apps. However, the the number of LESS variables has grown over the years to match the growing customizability of the Platform. There are now hundreds of variables. This allows for a wide degree of customization, but requires a lot of time from the designer to fill out. Perhaps a couple hours of grabbing values with a color picker, typing in values, forgetting what a certain div is called, building, checking the build, messing up, going back, forgetting which variable corresponds to which element of the template, slamming your fist through your computer monitor, etc.</p>
 
                     <figure>
                         <img class="img-work-page-half img-responsive" src="./img/tools/old-process.PNG" alt="Design Resource Allocation">
@@ -87,7 +91,7 @@
                     <p>I spoke with the App Dev team to understand the pain points and establish requirements for this tool:</p>
                     <ul>
                         <li>Has to be in Photoshop. All our templates and component libraries are built in Photoshop. All our existing toolchains use it. To ensure parity between developer and designer machines, we all use Windows, so we wouldn't be switching to Sketch anytime soon. Whatever I built, it had to interface with Photoshop.</li>
-                        <li>No more going through PSDs with the color picker and marquee tool grabbing heights, widths, colors, and border radii.</li>
+                        <li>No more going through .PSDs with the color picker and marquee tool grabbing heights, widths, colors, and border radii.</li>
                         <li>Remove the need for an excel sheet at all. Go straight from Photoshop to LESS.</li>
                     </ul>
 
@@ -105,11 +109,14 @@
                         <img class="img-work-page-half img-responsive" src="./img/tools/new-process.PNG" alt="New process">
                         <figcaption>New Process vs. Old Process</figcaption>
                     </figure>
-                    <h2><a id="css"></a>Building a Flexible and Designer-Friendly CSS Button Framework:</h2>
+                    <h2><a id="css"></a>Building a Flexible and Designer-Friendly CSS Button Framework</h2>
                     <p>A lot of designers are perfectionists. I think most of us have stumbled across a design decision that has made our blood boil. We care. We’re passionate about good processes and good results. As a result, we are sometimes overly-harsh when we encounter bad design. I know I’m guilty of it. Earlier in this post I was pretty hard on the Photoshop API. The truth is that bad design doesn’t exist in a vacuum. Decisions that make sense at the time don’t always age well. Designers get moved to other products, budgets get cut, deadlines get pushed up. Most modern, relatively well-designed systems made by passionate intelligent people will have a few odd artifacts of older design decisions hanging off of them. This is not the exception — it’s the rule. That’s why it’s important to approach what you might consider “bad design” with compassion and openness. Usually, the cause is not malice or incompetence, but a lack of resources.</p>
+                    <blockquote>
+                    How did we get here? Is this decision still serving us well?
+                    </blockquote>
                     <p>And that leads us to the second big inefficiency in our App Dev process. This is a difficult confession to put down on paper (pixels, whatever): when I started at TrueChoice Solutions, we did not have CSS buttons in our applications. We drew every button, drew every downstate for every button, and put all those assets onto a sprite sheet.</p>
-                    <p>When I first heard this, I had to work hard to be open-minded about it. It would have been easy to assume the worst. What kind of early-aughts flash-era nonsense was this? Surely this was a bad implementation, <em>had always</em> been a bad implementation, and was probably a <a href="https://en.wikipedia.org/wiki/Design_smell">design smell</a> — the first hint that our Platform was a Lovecraftian tangle of a UI framework that would drive any designer who touched it to madness.</p>
-                    <p>Instead, I did my research. I found that our Platform was built by a team of passionate developers and used by a team of equally passionate designers to meet our client’s needs. I gathered the necessary context to understand why a decision like drawn buttons was originally made. <em>How did we get here? Is this decision still serving us well?</em> Here’s what I found:</p>
+                    <p>When I first heard this, I had to work hard to be open-minded about it. It would have been easy to assume the worst. What kind of early-aughts flash-era nonsense was this? Surely this was a bad implementation, <em>had always</em> been a bad implementation, and was probably a <a href="https://en.wikipedia.org/wiki/Design_smell" target="_blank">design smell</a> — the first hint that our Platform was a Lovecraftian tangle of a UI framework that would drive any designer who touched it to madness.</p>
+                    <p>Instead, I did my research. I found that our Platform was built by a team of passionate developers and used by a team of equally passionate designers to meet our clients’ needs. I gathered the necessary context to understand why a decision like drawn buttons was originally made. <em>How did we get here? Is this decision still serving us well?</em> Here’s what I found:</p>
                     <p>Platform needs to facilitate a wide variety of visual styles to meet our client’s branding needs. Big companies that care about design require consistency across their experiences, even if those experiences are built by a third party. We believe in flexibility above almost everything, and what’s more flexible than drawing? Go back to the Ancient Times (2012ish). Skeumorphic design was ascendant; companies were building products on top of Flash; TrueChoice Solutions served a fraction of the clients that we do today. In the past, we had time and cause to draw our buttons. In the past, it made sense.</p>
                     <p>But there are many problems with non-CSS buttons:</p>
                     <ul>
@@ -131,38 +138,39 @@
                     <p>The whole original reason for the LESS spreadsheet is that designers shouldn’t have to write production-ready CSS on tight turnarounds. Any solution I came up with couldn’t require a designer to spend a ton of time writing styles for buttons. My goal was to save time and reduce errors, not waste time and create errors.</p>
                     <p>I was able to leverage my PSD &#x27F6; LESS script to auto-generate the CSS styles for buttons. To reassure our design team that we weren’t sacrificing much flexibility, I made the script robust enough that the styles supported could mimic all the buttons we’d done in our recent apps to clients. Their faces lit up when I showed them. I was heading in the right direction.</p>
                     <figure>
-                        <img class="img-work-page-half img-responsive" src="./img/tools/buttons.JPG" alt="Buttons">
+                        <img class="img-work-page-half img-responsive" src="./img/tools/buttons.png" alt="Buttons">
                         <figcaption>I showed the team that we could support a wide variety of button styles with CSS</figcaption>
                     </figure>
                     <h2><a id="sharing"></a>Sharing</h2>
-                    <p>The next challenge was figuring out what I should expose to the designer and what should be automatic. I struggled to figure this out on my own. Then I realized, I could just ask our app dev designers! We worked together to figure out the right level of flexibility. Ultimately, we decided that all styling of the buttons would be automatic, except for button’s downstate behavior, which would be chosen by the designer by setting a handful of LESS variables. It was interesting to see how just a few variables could be mixed and matched to create complex downstates.</p>
-                    <p>Next, I established the hierarchy for all buttons in our application. The old process involved the designer drawing each button in photoshop and deciding on the spot what its styles should be. Now, the styles from just a few buttons could propagate to all other buttons in the app, empowering designers to spend their time making decisions that matter instead of manually reproducing visual hierarchy for every application.</p>
-                    <p>I built a demo that showed this hierarchy:</p>
-                    <ul>
-                        <li>Welcome</li>
-                        <li>Primary</li>
-                        <li>Secondary</li>
-                        <li>Tertiary</li>
-                        <li>Help</li>
-                    </ul>
-                    <p>I passed off the button demos to our Frontend Team. Over the next week, I worked closely with the team to ensure this change was implemented correctly. A week later, it was built. Now, we use CSS buttons in every application we deploy.</p>
-                    <p>All my work is like Indiana Jones swapping out the bag of sand for the statue. That's what it's like when you design the new thing while you use the old thing to build apps. And as soon as you switch to the new thing, it starts getting used to build apps. That's internal tools.</p>
-                    <h2><a id="results"></a>Results:</h2>
+                    <p>The next challenge was figuring out what I should expose to the designer and what should be automatic. I worked together with out app dev designers to figure out the right level of flexibility. Ultimately, we decided that all styling of the buttons would be automatic, except for button’s downstate behavior, which would be chosen by the designer by setting a handful of LESS variables. It was interesting to see how just a few variables could be mixed and matched to create complex downstates.</p>
+                    <figure>
+                        <img class="img-work-page-half img-responsive" src="./img/tools/vars.png" alt="Buttons">
+                        <figcaption>Drop shadow + algorithmic darkening + down vertical motion = many possible downstate behaviors</figcaption>
+                    </figure>
+                    <p>Next, I established the hierarchy for all buttons in our application. The old process involved the designer drawing each button in photoshop and deciding on the spot what its visual design should be. Now, the styles from just a few buttons could propagate to all other buttons in the app, empowering designers to spend their time making decisions that matter instead of manually reproducing visual hierarchy for every application.</p>
+                    <p>I built a demo that showed how button styles could propagate across buttons in our application.</p>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/tools/button-hierarchy.png" alt="Buttons">
+                        <figcaption>Big yeets</figcaption>
+                    </figure>
+                    <p>Once I got the rest of the design team's approval, I passed off the button demos to our frontend team. Over the next week, I worked closely with the frontend team to ensure this change was implemented correctly. Now, we use CSS buttons in every application we deploy. It's  satisfying to see an internal tool I built get used on a regular basis.</p>
+                    <h2><a id="results"></a>Results</h2>
                     <div class="result-block"><p class="number">50% </p><p>OF ASSET PREPARATION TIME SAVED / BUILD</p></div>
-                    <div class="result-block"><p class="number">26</p><p>DAYS OF DESIGNER TIME SAVED ANNUALLY</p></div>
+                    <div class="result-block"><p class="number">20</p><p>DAYS OF DESIGNER TIME SAVED ANNUALLY</p></div>
                     <p>Here's some feedback from my coworkers who've seen these tools in action:</p>
                     <blockquote>
-                    This is really well thought-out.
+                    This is really well thought-out and there's a ton of functionality here.
                     <footer>Head of Frontend Development</footer>
                     </blockquote>
                     <blockquote>
-                    These tools are becoming an essential part of our build pipeline.
+                    This tool is becoming an essential part of our build pipeline.
                     <footer>VP of Technology and Engineering</footer>  
                     </blockquote>
                     <blockquote>
-                    We're saving so much time!
+                    We've been saving so much time!
                     <footer>Lead Designer</footer> 
                     </blockquote>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
                 </section>
             </div>
         </div>
@@ -172,5 +180,24 @@
                 <a class="display-link" href="phree.html"><p class="title">Next Project</p><p>Anti-Phone-Addiction App</p></a>
             </section>
         </div>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            // button visibility control
+            function scrollFunction() {
+            
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                    document.getElementById("myBtn").style.display = "block";
+                  } else {
+                    document.getElementById("myBtn").style.display = "none";
+                  }
+                }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // All others
+            }
+        </script>
 	</body>
 </html>

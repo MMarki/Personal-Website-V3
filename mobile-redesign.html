@@ -43,24 +43,27 @@
                         |
                         <a href="#results">Results</a>
                     </p>
-                    <img class="img-work-page img-responsive img-header" src="./img/mobile/mobile-cover.jpg" alt="Cover">
-                
+                    <img class="img-work-page img-responsive img-header" src="./img/mobile/mobile-cover-alt2.jpg" alt="Cover">
+                    <div class="row summary">
+                        <div class="col-xs-12 col-lg-6"><h3>SUMMARY</h3><p>I redesigned TrueChoice's mobile layouts to reduce user fatigue and better handle large amounts of content. I helped establish new user metrics to measure the impact the new designs were having. After deploying the new designs, our engagement metric has gone up <b>60% on mobile.</b></p></div>
+                        <div class="col-xs-12 col-lg-6"><h3>ROLE</h3><ul><li>Sole designer on the project.</li><li>Balanced this long-term project with a number of short-term client and sales projects with very quick turnarounds.</li><li>Reported directly to our Lead Designer.</li></ul></div>
+                    </div>
                     <h2><a id="intro"></a>Intro</h2>
                     <h3>What is TrueChoice?</h3>
-                    <p>TrueChoice is a small analytics company that builds web apps and provides data-based consulting to big companies. We build surveys that quantify user preferences so that our clients can better reward their employees, satisfy their customers, sell their products, and more. The surveys we build respond dynamically to user's answers and provide data-driven, actionable insights to our clients. We build these surveys on top of our underlying UI framework, called Platform.
+                    <p>TrueChoice is a small analytics company that builds web apps and provides data-based consulting to big companies. We build surveys that quantify user preferences so that our clients can better reward their employees, satisfy their customers, sell their products, and more. Our surveys respond dynamically to user's answers and provide data-driven, actionable insights to our clients. We build these surveys on top of our underlying UI framework, called Platform.
                     </p>
                     
                     <figure>
-                        <img class="img-work-page img-responsive" src="./img/tools/platform.jpg" alt="Wireframes">
+                        <img class="img-work-page-fit img-responsive" src="./img/tools/platform.jpg" alt="Wireframes">
                         <figcaption>Diagram of how our apps run on top of Platform</figcaption>
                     </figure>
                     
-                    <h3>The Problem:</h2>
-                    <p>The surveys we build are responsive web applications that run on any device. But our mobile design was outdated — content didn’t always fit well; widgets that made sense on desktop don’t map well to mobile; answering survey questions took too many clicks and too much scrolling. A complete mobile redesign was daunting though, and it hadn’t been done since the team first designed our mobile screens many years ago.</p>
-                    <p>The content of the survey determines how effective the insights to the client are. We work with our clients to make sure the content will yield them the best results possible, but ultimately, they get the final say. And clients are verbose. When we build apps, the final content doesn't always end up fitting well. We often run into a situation where there is more information than can fit on the page at mobile resolutions, and that’s a problem, because users have to be able to compare all the options on each page easilly.  Designing for variable lengths of content is hard, like building with LEGO bricks of unknown size.</p>
+                    <h3>The Problem</h2>
+                    <p>The surveys we build are responsive web applications that run on any device. But our mobile design was outdated — content didn’t always fit well; widgets that made sense on desktop don’t map well to mobile; answering survey questions took too many clicks and too much scrolling. A complete mobile redesign was daunting though, and it hadn’t been done since the team first made Platform responsive many years ago.</p>
+                    <p>The content of the survey determines how effective the insights to the client are. We work with our clients to make sure the content will yield them the best results possible, but they get the final say. And clients are verbose. When we build apps, the final content doesn't always end up fitting well. We often run into a situation where there is more information than can fit on the page at mobile resolutions, and that’s a problem, because users have to be able to compare all the options on each page easily.  Designing for variable lengths of content is hard, like building with LEGO bricks of unknown size.</p>
                     <p>And we were data-blind &#8212 we didn't have the hooks in Platform to compare time-in-app or dropoff rates between mobile, destop, and tablet resolutions. We were running on second-hand comments from clients and internal feedback. Before this project, we had never usability tested our mobile experience.</p>
                     
-                    <h3><a id="role"></a>Role:</h2>
+                    <h3><a id="role"></a>Role</h2>
                     <ul>
                         <li>Sole designer on the project.</li>
                         <li>Balanced this long-term project with a number of short-term client and sales projects with very quick turnarounds.</li>
@@ -68,16 +71,21 @@
                     </ul>
                     
                     <h3>How to Tackle a Challenge This Big?</h2>
-                    <p>The best way to tackle a large problem is to break it up into manageable pieces. Our surveys are already separated into 3 distinct parts, and each part had its own unique goals and pain-points. I divided the mobile redesign into these parts to create 3 more manageable design sprints. This allowed me to iterate on each piece and compose them into the final experience when I was ready. It also meant that each part-specific solution could be developed in series or in parallel, depending on the availability of the frontend team. The only challenge shared across all parts of our app was navigation, so I made navigation its own section as well and ended up with the following:</p>
+                    <p>The best way to tackle a large problem is to break it up into manageable pieces. Our surveys are already separated into 3 distinct parts, and each part had its own unique goals and pain-points.</p>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/mobile/3-stage.png" alt="Wireframes">
+                        <figcaption>Three stages</figcaption>
+                    </figure>
+                    <p>I divided the mobile redesign into these parts to create 3 more manageable design sprints. This allowed me to iterate on each piece and compose them into the final experience when I was ready. It also meant that each part-specific solution could be developed in series or in parallel, depending on the availability of the frontend team. The only challenge shared across all parts of our app was navigation, so I made navigation its own section as well and ended up with the following:</p>
                     <ul>
                         <li>Survey Navigation</li>
                         <li>Survey Part 1</li>
                         <li>Survey Part 2</li>
                         <li>Survey Part 3</li>
                     </ul>
+                    <p>But how would we test these new designs and measure our improvements? In parallel to the redesigns, I started building up a bigger UX toolset at TrueChoice, including improved user metrics, reports that were accessible for designers and stakeholders, and usability tests.</p>
                     <h2><a id="nav"></a>Survey Navigation</h2>
-
-                    <p>We create branded applications for clients. In addition to mirroring their buttons, fonts, icon styles, and colors, this means putting their logo on every page. This makes sense when considering the user journey from outside the application to inside the app. Make sure the app is trusted, let the user see the logo and know where they are.</p>
+                    <p>We create branded applications for clients. In addition to mirroring their buttons, fonts, icon styles, and colors, this means putting their logo on every page. This makes sense when considering the user journey from outside the application to inside the app. Make sure the app is trusted; let the user see the logo and know where they are.</p>
                     <figure>
                         <img class="img-work-page img-responsive" src="./img/mobile/journey.jpg" alt="Wireframes">
                         <figcaption>Primary Application Touchpoint</figcaption>
@@ -92,14 +100,14 @@
                     <h2><a id="part1"></a>Survey Part 1</h2>
                     <ul>
                         <li>Part 1 introduces and educates the user on the categories, and the options within each category of the survey.</li>
-                        <li>The user must be able to easilly compare all the options within a single category at once.</li>
+                        <li>The user must be able to easily compare all the options within a single category at once.</li>
                         <li>The user must be able to change each individual option.</li>
                         <li>The user must be able to learn more about each individual option.</li>
                     </ul>
-                    <p>On the smallest screens, we can only fit two sliders on a page. That's a huge problem for a page where a user needs to compare all the options and there might be up to 8 of them. Users did not have the context to make quick and confident decisions. What we had was a <a href="https://material.io/design/layout/applying-density.html#usage">layout density</a> problem.</p>
-                    <h3>Requirements:</h3>
-                    <p>I had to figure out how to condense the widgets in Part 1 to increase the number of sliders we could fit on a page at once. But too little whitespace would make the text hard to read and the touch targets too close to each other. What was the right amount of density? How many sliders should I try to fit on a mobile screen?</p>
-                    <p>I used our internal app statistics tool to figure out the median number of sliders for our most-content intensive type of app. For the last ten of these apps, the median was 5 sliders per page. So, if I could hit 5 sliders per page, even on a 320px device, that would mean that more often than not, a user could compare all the options without scrolling at all.</p>
+                    <p>On the smallest screens, we can only fit two sliders on a page. That's a huge problem for a page where a user needs to compare all the options and there might be up to 8 of them. Users did not have the context to make quick and confident decisions. What we had was a <a href="https://material.io/design/layout/applying-density.html#usage" target="_blank">layout density</a> problem.</p>
+                    <h3>Requirements</h3>
+                    <p>I had to figure out how to condense the widgets in Part 1 to increase the number of sliders we could fit on a page at once. But too little whitespace would make the layout hard to parse and the touch targets too close to each other. What was the right amount of density? How many sliders should I try to fit on a mobile screen?</p>
+                    <p>I used our internal app statistics tool to figure out the median number of sliders for our most-content intensive type of app. For the last ten of these apps, the median was 5 sliders per page. So, if I could fit 5 sliders per page, even on a 320px device, that would mean that more often than not, a user could compare all the options without scrolling at all.</p>
                     <h3>Wireframes</h3>
                     <p>I did most of my iterating with wireframes of varying fidelity. Here's the original problematic wireframe and an exporatory replacement.</p>
                     <figure>
@@ -108,7 +116,7 @@
                     </figure>
                     <figure>
                         <img class="img-work-page-half img-responsive" src="./img/mobile/first.jpg" alt="Wireframes">
-                        <figcaption>After a number of iterations, I got something much denser. Maybe... too dense?</figcaption>
+                        <figcaption>After a number of iterations, I got something much denser. Too dense, as it turned out.</figcaption>
                     </figure>
                     <p>There are a few key changes taking place here. The sliders are thinner, the thumbs are a smaller target, icons are one third smaller, and I am trusting that users know how to manipulate a slider to get smaller and larger values.</p>
                     <p>The design feedback was that the layout was too cramped, so I extended the margins and changed the size of the touch targets. Here's the results,  after a number of iterations, with real content from one of our applications:</p>
@@ -133,35 +141,43 @@
                     <figure>
                         <img class="img-work-page-half img-responsive" src="./img/mobile/tb-levels.jpg" alt="Wireframes">
                     </figure>
-
                     <h3>Prototyping</h3>
                     <p> I had designed a new slider for the mobile form factor, and I needed to validate that it felt good to interact with. I hacked up a prototype on top of Platform and started showing it to everyone in the office. My coworkers were accidentally clicking the wrong slider, or moving a slider with a tap when they meant to scroll down the page. I had seriously overestimated the user's dexterity during the visual design phase. I was reminded that the visual solution doesn't matter if it isn't usable.</p>
-                    <p>
-                    Based on their feedback I honed the prototype to get the information density, touch target size, and alignment to feel right on all the common screen footprints. I added something new to the layout to help with accidental slider touches during scrolling: a large right-hand margin creating a "gutter" for scrolling. I retested with new people and it improved the experience substantially.</p>
-
-                    <h2><a id="part2"></a>Survey Part 2</h2>
-                    <p>How it was</p>
                     <figure>
-                        <img class="img-work-page-half img-responsive" src="./img/mobile/placeholder.png" alt="yikes">
-                        <figcaption>Original layout workflow as gif</figcaption>
+                        <img class="img-work-page-half img-responsive" src="./img/mobile/part1.gif" alt="Jame'">
                     </figure>
-                    <p>Wireframe cloud</p>
+                    <p>Based on their feedback I honed the prototype to get the information density, touch target size, and alignment to feel right on all the common screen footprints. I added something new to the layout to help with accidental slider touches during scrolling: a slight increase to the right-hand margin, creating a "gutter" for scrolling. I retested with new people and it improved the experience substantially.</p>
+                    <h2><a id="part2"></a>Survey Part 2</h2>
+                    <p>Part 2 was the area with the biggest room for improvement. The slider and contextual information necessary to make an informed decision were hidden within a modal. Hiding so much information in the modal was a result of spacial constraints, but it made it hard to compare each option against the others. It took three clicks to rate even a single element: one to open the modal, two to move the slider, and three to close the modal.</p>
                     <figure>
-                        <img class="img-work-page-half img-responsive" src="./img/mobile/placeholder2.png" alt="yikes">
+                        <img class="img-work-page-half img-responsive" src="./img/mobile/part2-new.gif" alt="yikes">
+                        <figcaption>Not a good process</figcaption>
+                    </figure>
+                    <h3>Requirements</h3>
+                    <p>Any sucessful redesign had to make it easy for users to rate elements. The mechanism to rate categories couldn't be hidden away in a popup. However, I wanted to keep some sort of view where users could see the list in a condensed view.</p>
+                    <h3>Wireframes</h3>
+                    <p>I made a lot of sketches and wireframes in an attempt to find a design that would meet these requirements. Many of these ideas ended up being multi-screen flows where users could switch between a list view and an expanded view, or a detail view and a rating view. I tried extra levels of navigation on top and/or bottom, different levels of density, many configurations of level names and icons.</p>
+                    <figure>
+                        <img class="img-work-page img-responsive" src="./img/mobile/wireframe-cloud.png" alt="yikes">
                         <figcaption>A LOT of wireframes</figcaption>
                     </figure>
-                    <p>Usability tested it. In general, we saw low friction, and somewhat better comprehension (although we can still do a better job explaining this stage of the application).</p>
-
+                    <p>Ultimately, the most intuitive way to solve the problem was to pull out the relevant components from the modal and put it into the main flow of the page, even if that ended up making the page longer. I reviewed with Design, App Delivery, Frontend, and Analytics team members. Our final flow simplified things, since there was feedback that a multi-view UI was confusing here.</p>
+                    <figure>
+                        <img class="img-work-page-half img-responsive" src="./img/mobile/flow-overview.png" alt="yikes">
+                        <figcaption>Proposed Part 2 flow</figcaption>
+                    </figure>
+                    <p>First, there's an overview of the categories from Part 1 of the survey. This gives the user a condensed list of the categories they will be rating. Next, the user rates each category relative to the others. No information is obscured from the user. Finally, the user can review and confirm the changes they've made.</p>
+                    <h3>Prototyping & Usability Test</h3>
+                    <p>I built a low-fidelity prototype to see if new users could understand the new flow from Part 1 through Part 2. You can <a href="https://projects.invisionapp.com/share/RSQ45HYBQTC#/screens/342421703" target="_blank">try it out here.</a> Testers were asked to click through each page, and at the end of Part 1 and Part 2, I asked them questions about the structure of the application. Most users understood the structure and the way Part 1 and Part 2 functioned. They were confused by the review screen: multiple testers asked if there was anything to do on that screen, and others did not understand its purpose. We cut the review screen out of the final design as a result.</p>
 					<h2><a id="part3"></a>Survey Part 3</h2>
-                    <p>In Part 3 of our survey applications, users are asked to choose between 2 options that have been procedurally generated based on their prior answers. Based on how they choose between these two options, we alter our understanding of their preferences.</p>
-                    <p>The problem was that, for large amounts of content, we weren't even fitting both options fully on the page. And the mapping wasn't natural.</p>
+                    <p>In Part 3 of our applications, users are asked to choose between 2 options that have been procedurally generated based on their prior answers. Based on how they choose between these two options, we alter our understanding of their preferences.</p>
+                    <p>The problem was that, for large amounts of content, we weren't even fitting both options fully on the page. And it was not immediately apparent which way to move the slider to select one option vs. the other becase the mapping wasn't natural.</p>
                     <figure>
                         <img class="img-work-page-half img-responsive" src="./img/mobile/s3-original.jpg" alt="Wireframes">
                         <figcaption>For large amounts of content, the original layout broke down very quickly.</figcaption>
                     </figure>
-                    <p>There must be to compare both options at once. There must have a strong natural mapping and there must be visual feedback that reinforces the user's choice.</p>
-                    <p>More context is the goal. More context = better data (pullquote)</p>
-
+                    <h3>Requirements</h3>
+                    <p>The user must be able to compare both options at once. There must be a strong natural mapping and there must be visual feedback that reinforces the user's choice. More context was the goal. More context leads to better data.</p>
                     <h3>Wireframes</h3>
                     <figure>
                         <img class="img-work-page-half img-responsive" src="./img/mobile/first-tradeoff.jpg" alt="Wireframes">
@@ -175,18 +191,17 @@
 
                     <h3>Prototyping</h3>
                     <p> I wanted to test the scaling animation in browser, so I built a prototype on top of Platform again. I tested it with coworkers. Most of their feedback was about the scaling animation being too intense or too subtle. There were also concerns about the hierarchy. I kept honing it at every turn, adjusting the scaling and reworking the hierarchy.</p>
-                    <video width="372" height="614" controls>
-                      <source src="./img/mobile/prototype.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
+                    <figure>
+                        <img class="img-work-page-half img-responsive" src="./img/mobile/prototype3.gif" alt="Wireframes">
+                        <figcaption>Looking fresh, boye</figcaption>
+                    </figure>
                     <p>Overall, the redesign felt more natural. Users said &ldquo;It looks like the desktop layout,&rdquo; that the &ldquo;scaling feels smooth,&rdquo; and that this was &ldquo;obviously better than the previous design&rdquo;.</p>
                     <h2><a id="release"></a>Release</h2>
-                    <p>Data collection, once implemented showed much lower engagement on mobile than desktop. It was urgent that we roll out the new mobile layouts.</p>
-                    
+                    <p>Once implemented, our UX metrics showed somewhat lower completion rates and <em>much</em> lower engagement on mobile than desktop. It was urgent that we roll out the new mobile layouts.</p>
                     <h2><a id="results"></a>Results</h2>
                     <p>[[show finalized designs here. Before and after. Compare and contrast]]</p>
                     <figure>
-                        <img class="img-work-page-half img-responsive" src="./img/mobile/placeholder3.png" alt="Wireframes">
+                        <img class="img-work-page img-responsive" src="./img/mobile/mobile-cover-alt.jpg" alt="Wireframes">
                         <figcaption>old v new</figcaption>
                     </figure>
                     <p>Stats!</p>
@@ -199,7 +214,7 @@
         </div>
         <div class="container-fluid">
 			<section class="footer-nav">
-            	<a class="display-link" href="scripts-buttons.html"><p class="title">Next Project</p><p>Scripts Buttons</p></a>
+            	<a class="display-link" href="scripts-buttons.html"><p class="title">Next Project</p><p>Streamlining TrueChoice's App Design Process</p></a>
             </section>
         </div>
         <script>

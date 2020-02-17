@@ -56,8 +56,10 @@ body {
     border-bottom-width: 5px;
 }
 
-.col-md-12 .unjustified{
-  text-align: left;
+.col-md-12 .about h2,
+.col-md-12 .about h1, 
+.col-md-12 .about p {
+  margin-left: 0px;
 }
 /* End */
 
@@ -108,11 +110,15 @@ section.text-section{
 section.text-section p, section.text-section ul{
     max-width: 38em;
     margin-bottom: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.text-section h2, section.text-section h3 {
-	max-width: 29em;
+	max-width: 760px;
 	margin-bottom: 0.6em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.text-section li{
@@ -175,6 +181,33 @@ ul.bulletless{
     list-style: none;
 }
 
+.row{
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row .col-xs-12 {
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+
+.summary{
+    max-width: 940px;
+
+    p { 
+       font-size: 18px; 
+    }
+
+    ul{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 18px;
+    }
+
+}
+
 /*Top of page*/
 
 h1.work-header {
@@ -192,6 +225,7 @@ section.text-section .work-tasks{
     max-width: 44em;
     margin-bottom: 0px;
     text-align: left;
+    margin-left: 0px;
 }
 
 blockquote {
@@ -201,6 +235,9 @@ blockquote {
     font-size: 22px;
     color: #7a7e88;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 760px;
 }
 
 @media (max-width: 768px){
@@ -209,6 +246,12 @@ blockquote {
         font-size: 18px;
         color: #7a7e88;
         font-weight: bold;
+    }
+}
+
+@media (min-width: 1200px){
+    .col-lg-6 {
+        font-size: 18px;
     }
 }
 
@@ -229,12 +272,14 @@ a.display-link {
     color: @text-color;
     margin-bottom: 20px;
     height: 60px;
+    color: @my-blue;
 }
 
 a.display-link .title{
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
+    color:@text-color;
 }
 
 @media (max-width: 768px){
@@ -247,13 +292,15 @@ section.text-section .result-block{
     border-width: 2px;
     border-color: @selection-color;
     border-style: solid;
-    max-width: 600px;
+    max-width: 760px;
     margin-bottom: 28px;
     padding-left:20px;
     padding-right: 20px;
     padding-top: 20px;
     background-color: @selection-color;
     color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.text-section .result-block .number{

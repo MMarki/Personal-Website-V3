@@ -67,8 +67,10 @@ body {
   border-bottom-color: #231e1e;
   border-bottom-width: 5px;
 }
-.col-md-12 .unjustified {
-  text-align: left;
+.col-md-12 .about h2,
+.col-md-12 .about h1,
+.col-md-12 .about p {
+  margin-left: 0px;
 }
 /* End */
 /* Resume, Page*/
@@ -113,11 +115,15 @@ section.text-section p,
 section.text-section ul {
   max-width: 38em;
   margin-bottom: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
 }
 section.text-section h2,
 section.text-section h3 {
-  max-width: 29em;
+  max-width: 760px;
   margin-bottom: 0.6em;
+  margin-left: auto;
+  margin-right: auto;
 }
 section.text-section li {
   padding-left: 16px;
@@ -170,6 +176,27 @@ ol {
 ul.bulletless {
   list-style: none;
 }
+.row {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row .col-xs-12 {
+  margin-bottom: 20px;
+  padding-left: 0px;
+}
+.summary {
+  max-width: 940px;
+}
+.summary p {
+  font-size: 18px;
+}
+.summary ul {
+  font-size: 18px;
+}
+.summary h3 {
+  font-size: 18px;
+}
 /*Top of page*/
 h1.work-header {
   text-align: left;
@@ -184,6 +211,7 @@ section.text-section .work-tasks {
   max-width: 44em;
   margin-bottom: 0px;
   text-align: left;
+  margin-left: 0px;
 }
 blockquote {
   border-left: 5px solid #bbb;
@@ -192,6 +220,9 @@ blockquote {
   font-size: 22px;
   color: #7a7e88;
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 760px;
 }
 @media (max-width: 768px) {
   blockquote {
@@ -201,10 +232,10 @@ blockquote {
     font-weight: bold;
   }
 }
-.redacted {
-  background-color: #000;
-  color: #FFF;
-  text-transform: uppercase;
+@media (min-width: 1200px) {
+  .col-lg-6 {
+    font-size: 18px;
+  }
 }
 /* END T.O.P. */
 .footer-nav {
@@ -221,11 +252,13 @@ a.display-link {
   color: #231e1e;
   margin-bottom: 20px;
   height: 60px;
+  color: #6699FF;
 }
 a.display-link .title {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #231e1e;
 }
 @media (max-width: 768px) {
   a.display-link {
@@ -236,13 +269,15 @@ section.text-section .result-block {
   border-width: 2px;
   border-color: #231e1e;
   border-style: solid;
-  max-width: 600px;
+  max-width: 760px;
   margin-bottom: 28px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   background-color: #231e1e;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 section.text-section .result-block .number {
   font: 70px/1.2 'Forum', Helvetica, Arial, sans-serif;
@@ -287,6 +322,12 @@ figure {
   padding-bottom: 16px;
   border-color: #FDFDFD;
 }
+.img-work-page-fit {
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 16px;
+  max-width: 760px;
+}
 .img-work-page-half {
   margin: 0 auto;
   padding-top: 28px;
@@ -305,6 +346,12 @@ figure {
 }
 .small-content .resume-link img {
   max-width: 250px;
+}
+video {
+  display: block;
+  margin: auto;
+  width: 350px;
+  margin-bottom: 20px;
 }
 /*navbar*/
 .navbar-default {
@@ -426,7 +473,7 @@ a.image-link img {
 }
 #portfolio .portfolio-item {
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
   text-align: left;
 }
 .portfolio-item a {
@@ -515,7 +562,7 @@ a.resume-link:hover {
   font-size: 44px;
   max-width: 900px;
   margin: 0 auto;
-  text-align: justify;
+  text-align: left;
 }
 .front-styles > p {
   margin-bottom: 10px;
@@ -592,4 +639,39 @@ a.bttn > span {
   padding: 15px;
   border-radius: 29px;
   font-size: 20px;
+}
+/*video::-webkit-media-controls-play-button {}*/
+video::-webkit-media-controls-volume-slider {
+  display: none;
+}
+video::-webkit-media-controls-mute-button {
+  display: none;
+}
+.wrapper {
+  position: relative;
+  width: 350px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.video > video.has-media-controls-hidden::-webkit-media-controls {
+  display: none;
+}
+.video-overlay-play-button {
+  box-sizing: border-box;
+  width: 350px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
+}
+.video-overlay-play-button:hover {
+  opacity: 1;
+}
+.video-overlay-play-button.is-hidden {
+  display: none;
 }

@@ -72,7 +72,7 @@ a.image-link img {
 
 #portfolio .portfolio-item {
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
     text-align: left;
 }
 
@@ -166,7 +166,7 @@ a.resume-link:hover {
     font-size: 44px;
     max-width: 900px;
     margin: 0 auto;
-    text-align: justify;
+    text-align: left;
     
     &> p {margin-bottom: 10px;}
     
@@ -247,4 +247,47 @@ a.bttn{
   padding: 15px; 
   border-radius: 29px; 
   font-size: 20px; 
+}
+
+/*video::-webkit-media-controls-play-button {}*/
+
+video::-webkit-media-controls-volume-slider {
+    display: none;
+}
+
+video::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+.wrapper{
+    position: relative;
+    width: 350px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video > video.has-media-controls-hidden::-webkit-media-controls {
+    display: none;
+}
+
+.video-overlay-play-button {
+    box-sizing: border-box;
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    cursor: pointer;
+    background-color:rgba(0,0,0,0.5);
+    transition: opacity 200ms;
+}
+
+.video-overlay-play-button:hover {
+    opacity: 1;
+}
+
+.video-overlay-play-button.is-hidden {
+    display: none;
 }
