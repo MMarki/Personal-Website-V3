@@ -39,23 +39,23 @@
                         |
                         <a href="#results">Results</a>
                     </p>
-                    <img class="img-work-page img-responsive img-header" src="./img/tools/button-cover-new.png" alt="Cover">
+                    <img class="img-work-page img-responsive img-header" src="./img/tools/button-cover-new.png" alt="Cover image of a button schematic">
                     <div class="row summary">
                         <div class="col-xs-12 col-lg-6"><h3>SUMMARY</h3><p>I identified an area of improvement and build internal tools using JavaScript, CSS, and the Photoshop API to steamine design handoff. I saved <b>1 month of designer-time yearly.</b>
                         </p></div>
-                        <div class="col-xs-12 col-lg-6"><h3>ROLE</h3>I was the the sole person working on this project. It was done in downtime between more time-sensitive projects on my own initiative. I regularly consulted with the rest of the design team to build a solution that worked for all of us.</div>
+                        <div class="col-xs-12 col-lg-6"><h3>ROLE</h3>I was the the sole person working on this project. It was done in downtime on my own initiative between more time-sensitive projects. I regularly consulted with the rest of the design team to build a solution that worked for all of us.</div>
                     </div>
                     <h2><a id="intro"></a>Intro</h2>
                     <h3>What is TrueChoice?</h3>
                     <p>TrueChoice is an analytics company that builds web apps and provides data-based consulting for big companies. Our survey apps match — or feel like a natural extension of — our clients' brands. Here’s the simplified progression of a client project at TrueChoice:</p>
                     <figure>
-                        <img class="img-work-page img-responsive" src="./img/tools/workflow.png" alt="workflow">
+                        <img class="img-work-page img-responsive" src="./img/tools/workflow.png" alt="TrueChoice project workflow">
                         <figcaption>We are an end-to-end solution. We handle every part of this process.</figcaption>
                     </figure>
                     <p>From start to finish, these projects take a couple months, max, and our very small team manages multiple projects at once. To handle our workload, our designers and front-end developers build our apps on top of a proprietary UI framework called Platform.</p>
                     
                     <figure>
-                        <img class="img-work-page img-responsive" src="./img/tools/platform.jpg" alt="Platform">
+                        <img class="img-work-page img-responsive" src="./img/tools/platform.jpg" alt="Multiple apps built on one platform">
                         <figcaption>Apps are built on top of the Platform</figcaption>
                     </figure>
 
@@ -63,7 +63,7 @@
                     <p>So, we're building apps on incredibly tight deadlines, usually working on multiple projects at once. To meet these deadlines, a full half of our design team is dedicated solely to building client apps. And the process they went through to deliver these apps had inefficiencies that made it tough for them to deliver apps on time without working overtime.</p>
 
                     <figure>
-                        <img class="img-work-page-fit img-responsive" src="./img/tools/design.JPG" alt="Design Resource Allocation">
+                        <img class="img-work-page-fit img-responsive" src="./img/tools/design.JPG" alt="Designer Resource Allocation">
                         <figcaption>Design Team Diagram</figcaption>
                     </figure>
 
@@ -81,7 +81,7 @@
                     <p>A designer must enter the values for a large number of LESS variables into an Excel spreadsheet, which then gets imported and turned into real LESS variable declarations during the build process. The values in the LESS variables propagate to the various components in the application. Originally, this was meant to be an easy interface for designers without coding experience to customize our apps. However, the the number of LESS variables has grown over the years to match the growing customizability of the Platform. There are now hundreds of variables. This allows for a wide degree of customization, but requires a lot of time from the designer to fill out. Perhaps a couple hours of grabbing values with a color picker, typing in values, forgetting what a certain div is called, building, checking the build, messing up, going back, forgetting which variable corresponds to which element of the template, slamming your fist through your computer monitor, etc.</p>
 
                     <figure>
-                        <img class="img-work-page-half img-responsive" src="./img/tools/old-process.PNG" alt="Design Resource Allocation">
+                        <img class="img-work-page-half img-responsive" src="./img/tools/old-process.PNG" alt="Color picker to excel to code with a red x next to it">
                         <figcaption>Existing Process</figcaption>
                     </figure>
 
@@ -100,13 +100,13 @@
                     <p>A good API requires two things: Good documentation and useful abstractions. The Photoshop API has neither.</p>
                     <p>Easy things were hard. Doing something as simple as getting the color of a layer was bafflingly complex and opaque. So, my first step was to make a set of functions that actually met the script's basic needs. I built my own layer of abstraction on top of the messy Photoshop API and walled it off.</p>
 					<figure>
-                        <img class="img-work-page-half img-responsive" src="./img/tools/photoshop-api.JPG" alt="Buttons">
-                        <figcaption>Building more useful functions on top of the base</figcaption>
+                        <img class="img-work-page-half img-responsive" src="./img/tools/photoshop-api.JPG" alt="Diagram showing my library built on top of the existing photoshop api">
+                        <figcaption>I built more useful functions on top of Photoshop's API</figcaption>
                     </figure>
                     <p>Then, I used my helpful layer of functions to build a script that systematically combs the layers of one of our Photoshop documents, going into smart objects, extracting relevant styles, and automatically constructing a LESS file (no excel sheet needed). After about a week, I had a minimum viable product. I invited the other designers to start using it to generate the LESS for real client builds. Letting them get their hands on it early was instructive. They told me what worked for them, what didn't, and helped prioritize how to expand the script's capabilities. Over the course of a few more weeks of part-time work, I was able to flesh out the functionality of the script with confidence that I was building something that was helpful to my teammates.</p>
                     <p>Now, we use the script for every build. It can do what a designer can do by hand — except error-free — in 5 minutes instead of an hour. It saves AppDev a few hours of tedium a every week. The is a modest improvement, but it laid the groundwork for improvements to come...</p>
                     <figure>
-                        <img class="img-work-page-half img-responsive" src="./img/tools/new-process.PNG" alt="New process">
+                        <img class="img-work-page-half img-responsive" src="./img/tools/new-process.PNG" alt="Diagram of new process showing JavaScript to the browser directly">
                         <figcaption>New Process vs. Old Process</figcaption>
                     </figure>
                     <h2><a id="css"></a>Building a Flexible and Designer-Friendly CSS Button Framework</h2>
@@ -138,19 +138,19 @@
                     <p>The whole original reason for the LESS spreadsheet is that designers shouldn’t have to write production-ready CSS on tight turnarounds. Any solution I came up with couldn’t require a designer to spend a ton of time writing styles for buttons. My goal was to save time and reduce errors, not waste time and create errors.</p>
                     <p>I was able to leverage my PSD &#x27F6; LESS script to auto-generate the CSS styles for buttons. To reassure our design team that we weren’t sacrificing much flexibility, I made the script robust enough that the styles supported could mimic all the buttons we’d done in our recent apps to clients. Their faces lit up when I showed them. I was heading in the right direction.</p>
                     <figure>
-                        <img class="img-work-page-half img-responsive" src="./img/tools/buttons.png" alt="Buttons">
+                        <img class="img-work-page-half img-responsive" src="./img/tools/buttons.png" alt="A wall of differently styles buttons">
                         <figcaption>I showed the team that we could support a wide variety of button styles with CSS</figcaption>
                     </figure>
                     <h2><a id="sharing"></a>Sharing</h2>
                     <p>The next challenge was figuring out what I should expose to the designer and what should be automatic. I worked together with out app dev designers to figure out the right level of flexibility. Ultimately, we decided that all styling of the buttons would be automatic, except for button’s downstate behavior, which would be chosen by the designer by setting a handful of LESS variables. It was interesting to see how just a few variables could be mixed and matched to create complex downstates.</p>
                     <figure>
-                        <img class="img-work-page-half img-responsive" src="./img/tools/vars.png" alt="Buttons">
+                        <img class="img-work-page-half img-responsive" src="./img/tools/vars.png" alt="Screenshot of CSS variables">
                         <figcaption>Drop shadow + algorithmic darkening + down vertical motion = many possible downstate behaviors</figcaption>
                     </figure>
                     <p>Next, I established the hierarchy for all buttons in our application. The old process involved the designer drawing each button in photoshop and deciding on the spot what its visual design should be. Now, the styles from just a few buttons could propagate to all other buttons in the app, empowering designers to spend their time making decisions that matter instead of manually reproducing visual hierarchy for every application.</p>
                     <p>I built a demo that showed how button styles could propagate across buttons in our application.</p>
                     <figure>
-                        <img class="img-work-page img-responsive" src="./img/tools/button-hierarchy.png" alt="Buttons">
+                        <img class="img-work-page img-responsive" src="./img/tools/button-hierarchy.png" alt="Diagram of how basic colors propagate to specific buttons">
                         <figcaption>Big yeets</figcaption>
                     </figure>
                     <p>Once I got the rest of the design team's approval, I passed off the button demos to our frontend team. Over the next week, I worked closely with the frontend team to ensure this change was implemented correctly. Now, we use CSS buttons in every application we deploy. It's  satisfying to see an internal tool I built get used on a regular basis.</p>

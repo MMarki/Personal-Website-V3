@@ -89,11 +89,8 @@ body {
 /* End*/
 
 /* Main */
-section.text-section {
-    font-size: 20px;
-}
-
 section.text-section{
+    font-size: 20px;
     max-width: 48em;
     margin: 0 auto;
     text-align: left;
@@ -104,6 +101,8 @@ section.text-section{
 @media (max-width: 600px) {
   section.text-section {
     font-size: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -157,10 +156,12 @@ h2{
     font-size:32px;
     text-align: left;
     margin-top: 52px;
+    line-height: 1.5;
 }
 
 h3{
     font-size:20px;
+    line-height: 1.5;
 }
 
 @media (max-width: 600px){
@@ -206,6 +207,16 @@ ul.bulletless{
         font-size: 18px;
     }
 
+}
+
+@media (max-width: 600px){
+    .summary p {
+        font-size: 16px;
+    }
+
+    .summary ul{
+        font-size: 16px;
+    }
 }
 
 /*Top of page*/

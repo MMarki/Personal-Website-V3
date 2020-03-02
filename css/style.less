@@ -7,7 +7,7 @@
 @my-lavender: #ebbaff;
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -61,8 +61,8 @@ a.image-link img {
     padding-right: 18vw;
 
     @media (max-width : 900px){
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
     }
 
     @media (max-width : 768px) {
@@ -266,6 +266,22 @@ video::-webkit-media-controls-mute-button {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 400px) {
+      .wrapper {
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .wrapper .video-overlay-play-button {
+        width: 100%;
+    }
+}
+
+
 
 .video > video.has-media-controls-hidden::-webkit-media-controls {
     display: none;

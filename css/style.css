@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 body {
   background-color: #FFF;
@@ -98,8 +98,6 @@ body {
 /* Main */
 section.text-section {
   font-size: 20px;
-}
-section.text-section {
   max-width: 48em;
   margin: 0 auto;
   text-align: left;
@@ -109,6 +107,8 @@ section.text-section {
 @media (max-width: 600px) {
   section.text-section {
     font-size: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 section.text-section p,
@@ -157,9 +157,11 @@ h2 {
   font-size: 32px;
   text-align: left;
   margin-top: 52px;
+  line-height: 1.5;
 }
 h3 {
   font-size: 20px;
+  line-height: 1.5;
 }
 @media (max-width: 600px) {
   section.text-section h2 {
@@ -196,6 +198,14 @@ ul.bulletless {
 }
 .summary h3 {
   font-size: 18px;
+}
+@media (max-width: 600px) {
+  .summary p {
+    font-size: 16px;
+  }
+  .summary ul {
+    font-size: 16px;
+  }
 }
 /*Top of page*/
 h1.work-header {
@@ -327,6 +337,11 @@ figure {
   padding-top: 28px;
   padding-bottom: 16px;
   max-width: 760px;
+}
+@media (max-width: 780px) {
+  .img-work-page-fit {
+    max-width: 100%;
+  }
 }
 .img-work-page-half {
   margin: 0 auto;
@@ -653,6 +668,17 @@ video::-webkit-media-controls-mute-button {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 400px) {
+  .wrapper {
+    width: 100%;
+  }
+  video {
+    width: 100%;
+  }
+  .wrapper .video-overlay-play-button {
+    width: 100%;
+  }
 }
 .video > video.has-media-controls-hidden::-webkit-media-controls {
   display: none;
