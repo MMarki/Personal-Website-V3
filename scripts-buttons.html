@@ -63,7 +63,7 @@
                     <p>So, we're building apps on incredibly tight deadlines, usually working on multiple projects at once. To meet these deadlines, a full half of our design team is dedicated solely to building client apps. And the process they went through to deliver these apps had inefficiencies that made it tough for them to deliver apps on time without working overtime.</p>
 
                     <figure>
-                        <img class="img-work-page-fit img-responsive" src="./img/tools/design.JPG" alt="Designer Resource Allocation">
+                        <img class="img-work-page-fit img-responsive" src="./img/tools/design.jpg" alt="Designer Resource Allocation">
                         <figcaption>Design Team Diagram</figcaption>
                     </figure>
 
@@ -81,7 +81,7 @@
                     <p>A designer must enter the values for a large number of LESS variables into an Excel spreadsheet, which then gets imported and turned into real LESS variable declarations during the build process. The values in the LESS variables propagate to the various components in the application. Originally, this was meant to be an easy interface for designers without coding experience to customize our apps. However, the the number of LESS variables has grown over the years to match the growing customizability of the Platform. There are now hundreds of variables. This allows for a wide degree of customization, but requires a lot of time from the designer to fill out. Perhaps a couple hours of grabbing values with a color picker, typing in values, forgetting what a certain div is called, building, checking the build, messing up, going back, forgetting which variable corresponds to which element of the template, slamming your fist through your computer monitor, etc.</p>
 
                     <figure>
-                        <img class="img-work-page-half img-responsive" src="./img/tools/old-process.PNG" alt="Color picker to excel to code with a red x next to it">
+                        <img class="img-work-page-half img-responsive" src="./img/tools/old-process.png" alt="Color picker to excel to code with a red x next to it">
                         <figcaption>Existing Process</figcaption>
                     </figure>
 
@@ -100,13 +100,13 @@
                     <p>A good API requires two things: Good documentation and useful abstractions. The Photoshop API has neither.</p>
                     <p>Easy things were hard. Doing something as simple as getting the color of a layer was bafflingly complex and opaque. So, my first step was to make a set of functions that actually met the script's basic needs. I built my own layer of abstraction on top of the messy Photoshop API and walled it off.</p>
 					<figure>
-                        <img class="img-work-page-half img-responsive" src="./img/tools/photoshop-api.JPG" alt="Diagram showing my library built on top of the existing photoshop api">
+                        <img class="img-work-page-half img-responsive" src="./img/tools/photoshop-api.jpg" alt="Diagram showing my library built on top of the existing photoshop api">
                         <figcaption>I built more useful functions on top of Photoshop's API</figcaption>
                     </figure>
                     <p>Then, I used my helpful layer of functions to build a script that systematically combs the layers of one of our Photoshop documents, going into smart objects, extracting relevant styles, and automatically constructing a LESS file (no excel sheet needed). After about a week, I had a minimum viable product. I invited the other designers to start using it to generate the LESS for real client builds. Letting them get their hands on it early was instructive. They told me what worked for them, what didn't, and helped prioritize how to expand the script's capabilities. Over the course of a few more weeks of part-time work, I was able to flesh out the functionality of the script with confidence that I was building something that was helpful to my teammates.</p>
                     <p>Now, we use the script for every build. It can do what a designer can do by hand — except error-free — in 5 minutes instead of an hour. It saves AppDev a few hours of tedium a every week. The is a modest improvement, but it laid the groundwork for improvements to come...</p>
                     <figure>
-                        <img class="img-work-page-half img-responsive" src="./img/tools/new-process.PNG" alt="Diagram of new process showing JavaScript to the browser directly">
+                        <img class="img-work-page-half img-responsive" src="./img/tools/new-process.png" alt="Diagram of new process showing JavaScript to the browser directly">
                         <figcaption>New Process vs. Old Process</figcaption>
                     </figure>
                     <h2><a id="css"></a>Building a Flexible and Designer-Friendly CSS Button Framework</h2>
@@ -151,7 +151,7 @@
                     <p>I built a demo that showed how button styles could propagate across buttons in our application.</p>
                     <figure>
                         <img class="img-work-page img-responsive" src="./img/tools/button-hierarchy.png" alt="Diagram of how basic colors propagate to specific buttons">
-                        <figcaption>A handful of button styles feed into many buttons.</figcaption>
+                        <figcaption>A handful of button styles feed into many buttons</figcaption>
                     </figure>
                     <p>Once I got the rest of the design team's approval, I passed off the button demos to our frontend team. Over the next week, I worked closely with the frontend team to ensure this change was implemented correctly. Now, we use CSS buttons in every application we deploy. It's  satisfying to see an internal tool I built get used on a regular basis.</p>
                     <h2><a id="results"></a>Results</h2>
